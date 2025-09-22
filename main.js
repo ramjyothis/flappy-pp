@@ -15,7 +15,7 @@ const birdImg = new Image();
 birdImg.src = "bird.png";
 
 // Background music
-let bgMusic = new Audio("bg-music.mp3");
+let bgMusic = new Audio("bg-music.MP3");
 bgMusic.loop = true;
 bgMusic.volume = 1.0;
 
@@ -196,4 +196,5 @@ canvas.addEventListener("mousedown", () => {
 // Start game
 resetGame();
 gameLoop();
+
 
