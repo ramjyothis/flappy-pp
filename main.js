@@ -17,7 +17,7 @@ birdImg.src = "bird.png";
 // Background music
 let bgMusic = new Audio("bg-music.mp3");
 bgMusic.loop = true;
-bgMusic.volume = 0.5;
+bgMusic.volume = 1.0;
 
 // Bird class
 class Bird {
@@ -50,7 +50,7 @@ class Bird {
 // Pipe class
 class Pipe {
   constructor(x) {
-    this.gap = 250;
+    this.gap = 200;
     this.width = 50;
     this.height = Math.floor(Math.random() * 200) + 100;
     this.x = x;
@@ -196,3 +196,4 @@ canvas.addEventListener("mousedown", () => {
 // Start game
 resetGame();
 gameLoop();
+
